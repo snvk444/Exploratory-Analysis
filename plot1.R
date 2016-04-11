@@ -11,6 +11,7 @@ datetime <- paste(as.Date(data1$Date), data1$Time)
 data1$Datetime <- as.POSIXct(datetime)
 
 ## Plot 1
+par(mar = c(4,4,1,1))
 hist(data1$Global_active_power, main="Global Active Power", 
      xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 
